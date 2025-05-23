@@ -1,0 +1,134 @@
+# Node modules
+node_modules/
+
+# bin
+bin/
+
+# Task
+Task.txt
+
+# Database setup
+./database-setup
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm/
+
+# dotenv environment variables
+.env
+.env.local
+.env.*.local
+
+# Local build directories
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+.env/
+venv/
+ENV/
+env/
+Pipfile.lock
+
+# Virtual environment directories
+.venv/
+venv/
+
+
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Coverage reports
+coverage/
+htmlcov/
+
+# Test output
+test-results/
+
+# macOS Finder attributes
+*.DS_Store
+
+# Temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# AWS credentials (if present)
+.aws/
+
+# Redis dump files
+dump.rdb
+
+# Database files
+*.sqlite3
+*.db
+
+# Logs & error reports
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Local JSON database (if used)
+data/*.json
+
+# React native / Expo
+.expo/
+
+# Next.js build output
+.next/
+
+# Parcel cache
+.cache/
+
+# Storybook
+.out/
+
+# VS Code settings
+.vscode/
+
+# Optional yarn offline cache
+.yarn/cache
+
+# JetBrains IDEs
+.idea/
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Ignore coverage output
+coverage/
+
+# Ignore any local config overrides
+.local/
+
+# Generated static files
+public/static/
+
+# Ignore other OS-specific files
+Icon?
+ehthumbs.db
+Desktop.ini
