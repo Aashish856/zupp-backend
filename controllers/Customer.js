@@ -8,8 +8,8 @@ const sendOTP = require('../utils/sendotp');
 const JWT_SECRET = process.env.JWT_SECRET || 'supersecretkey';
 
 const sendOtp = async (phone_number) => {
-  // const otp = Math.floor(100000 + Math.random() * 900000);
-  const otp = "123456"
+  const otp = Math.floor(100000 + Math.random() * 900000);
+  // const otp = "123456"
   const otpKey = `otp:${phone_number}`;
   const requestCountKey = `otp_requests_count:${phone_number}`;
   
@@ -25,6 +25,7 @@ const sendOtp = async (phone_number) => {
     
     await redis.del(otpKey);
     const ress = await redis.set(otpKey, otp, 'EX', 300);
+    await sendOTP(phone_number, otp);
     return { success: true, otp };
   } catch (error) {
     await redis.del(otpKey);
